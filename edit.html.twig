@@ -1,0 +1,8 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    {% if function('current_user_can', 'administrator' ) %}
+    {% set layout_url = "admin.php?page=layout-manager&view=configurations/" ~ gantry.page.outline ~ "/layout" %}
+    <a href="{{ function('admin_url', layout_url) }}" class="button button-small button-outline">Edit Outline</a>
+    {% endif %}
+{% endblock %}
