@@ -1,0 +1,12 @@
+name: Edit
+description: Edit the current Outline.
+type: particle
+icon: fa-edit
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
